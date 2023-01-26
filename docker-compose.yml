@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  freesurfer_vnc:
+    container_name: ml_workspace_matlab
+    build: .
+    image: cgvalle/ml_workspace_matlab:dev
+    restart: unless-stopped
+    ports:
+      - 9020:8080
+
