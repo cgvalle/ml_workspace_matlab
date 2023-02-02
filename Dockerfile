@@ -16,5 +16,6 @@ RUN touch /usr/share/applications/matlab.desktop && \
     echo "Name=MATLAB $MATLAB_VERSION" >> /usr/share/applications/matlab.desktop && \
     echo "Icon=/root/matlab.ico" >> /usr/share/applications/matlab.desktop && \
     echo "Comment=MATLAB" >> /usr/share/applications/matlab.desktop && \
+    echo "Categories=Development" >> /usr/share/applications/matlab.desktop && \
     chmod +x /usr/share/applications/matlab.desktop
 
