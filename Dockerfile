@@ -6,6 +6,7 @@ ENV MATLAB_VERSION=R2022a
 COPY --from=matlab /opt/matlab/$MATLAB_VERSION /opt/matlab/$MATLAB_VERSION
 
 COPY matlab.ico /root
+#COPY bg_ml_foundation.png  /root/resources/branding/bg_ml_foundation.png
 
 RUN touch /usr/share/applications/matlab.desktop && \
     echo "[Desktop Entry]" >> /usr/share/applications/matlab.desktop && \
