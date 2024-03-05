@@ -1,7 +1,7 @@
-FROM mathworks/matlab:r2022a as matlab
+FROM mathworks/matlab:r2022b as matlab
 FROM mltooling/ml-workspace:latest
 
-ENV MATLAB_VERSION=R2022a
+ENV MATLAB_VERSION=R2022b
 
 COPY --from=matlab /opt/matlab/$MATLAB_VERSION /opt/matlab/$MATLAB_VERSION
 

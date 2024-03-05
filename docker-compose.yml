@@ -7,8 +7,7 @@ services:
       dockerfile: Dockerfile
       #args:
       #  MATLAB_VERSION: r2022b
-    image:  cgvalle/ml_workspace_matlab:r2022a
-    restart: unless-stopped
+    image:  cgvalle/ml_workspace_matlab:r2022b
     ports:
       - 9020:8080
     #volumes:
